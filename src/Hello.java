@@ -25,23 +25,36 @@ public class Hello {
  */
 
 
-
+//Zadanie 4
 import java.util.Scanner;
+
 public class Hello {
     public static void main(String[] args)
     {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.print("Wprowadz tekst: ");
+        System.out.print("Podaj imie studenta: ");
+        String imie = scanner.nextLine();
 
-        String wprowadzoneTekst = scanner.nextLine();
+        System.out.print("Podaj nazwisko studenta: ");
+        String nazwisko = scanner.nextLine();
 
-        System.out.print("Wprowadzony tekst: " + wprowadzonyTekst);
+        System.out.print("Podaj wiek studenta: ");
+        int wiek = scanner.nextInt();
 
-        Scanner.close();
+        scanner.nextLine();
+
+        System.out.print("Podaj numer indeksu studenta: ");
+        String numerIndeksu = scanner.nextLine();
+
+        System.out.println("Dane studenta:");
+        System.out.println("Imię: " + imie);
+        System.out.println("Nazwisko: " + nazwisko);
+        System.out.println("Wiek: " + wiek);
+        System.out.println("Numer indeksu: " + numerIndeksu);
+
+        scanner.close();
     }
-
 }
 
-//nowy
 
